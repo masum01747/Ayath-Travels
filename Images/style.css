@@ -15,11 +15,7 @@
  }
 
  
- /* starting nav bar */
- /* .navbar-content{
-  display: flex;
-  justify-content: space-between;
- } */
+ 
  nav{
     display:flex;
     justify-content: space-between;
@@ -81,8 +77,10 @@
  .bannar-img{
  width:100%;
  height:100%;
-height: 500px;
-flex-shrink: 0;
+/* height: 500px; */
+
+
+
 border-radius: 16px;
 background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0) 100%);
 
@@ -120,9 +118,19 @@ background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 
  }
 
  .button-all{
+  
+
    display: flex; 
    justify-content:space-between;
    gap:15px;
+   align-items: center;
+  justify-content: center;
+  width: 850px;
+  height:72px;
+  border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+margin-right: 100px;
+   
    /* padding: 15px 15px; */
   
  }
@@ -448,7 +456,7 @@ flex-shrink: 0;
     display:flex;
     flex-basis: auto;
     flex-wrap: wrap;
-    gap:20px;
+    gap:10px;
    margin-top: 50px;
   justify-content: center;
 
@@ -456,7 +464,7 @@ flex-shrink: 0;
 
  }
  .hotel-service{
-    width: 540px;
+    width: 530px;
     height: 284px;
     flex-shrink: 0;
     border-radius: 16px;
@@ -471,7 +479,7 @@ flex-shrink: 0;
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
-    width: 540px;
+    width: 530px;
     height: 284px;
     flex-shrink: 0;
     padding-top: 30px;
@@ -622,6 +630,7 @@ flex-shrink: 0;
     
 /* special mobile apps */
 .special{
+
   margin-top: 50px;
   border-radius: 16px;
   background-color: #e8e8eec9;
@@ -629,21 +638,42 @@ flex-shrink: 0;
   height:400px;
   display: flex;
 }
+.download{
+  width:50px;
+  height:50px
+}
+.playbutton{
+  width:50px;
+  height:50px
+}
+.qrcode{
+  position:relative;
+  justify-content: center;
+  align-items: end;
+  width:120px;
+  height:120px;
+  margin-left: 300px;
+  margin-top: 120px;
+
+}
 .mobile{
   width: 50px;
   height: 50px;
   border:1px solid red;
 }
 .download{
+  width: 500px;
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 25px;
 
 }
 .welcome{
+  margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  margin-left: 20px;
 
   }
   .applink{
@@ -667,6 +697,11 @@ flex-shrink: 0;
     /* Started footer */
     footer{
       width:100%
+    }
+    .img10{
+      position: relative;
+    justify-content: center;
+    bottom:50px;
     }
     .foter-section{
       width: 1440px;
@@ -719,4 +754,41 @@ flex-shrink: 0;
       
       font-size: 16px;
      text-align: center;
+    }
+
+
+
+    /* Started media query */
+    @media screen and (max-width:600px) {
+      .left-content{
+        width: 375px;
+        height: 64px;
+      }
+      
+      
+      .bannar-img{
+        width:335px;
+        height:483;
+        border-radius: 16px
+       ;}
+       .button-all{
+        display: flex;
+        width:287px;
+        padding:16;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:16px;
+        border-radius: 8px;
+
+       }
+       .container1{
+        display:flex;
+        max-width: 335px;
+        height: 176px;
+        border-radius: 16px;
+    
+
+       }
+
+      
     }
